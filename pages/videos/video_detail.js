@@ -120,11 +120,13 @@ client.videos.detail(videoId, data => {
       link
     } = item;
 
+    // Handle cases where quality is null or undefined
+    const qualityLabel = quality ? quality.toUpperCase() : "UNKNOWN";
 
 
     $downloadMenu.innerHTML +=
       ` <a href=${link} class="menu-item" download data-ripple  data-menu-item>
-          <span class="label-large text">${quality.toUpperCase()}</span>
+          <span class="label-large text">${qualityLabel}</span>
 
 
           <span class="label-large trailing-text">${width}x${height}</span>
