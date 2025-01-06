@@ -95,9 +95,19 @@ client.videos.detail(videoId, data => {
   } = data;
 
 
-  const hdVideo = video_files.find(item => item.quality === "hd");
+  const hdVideo = video_files?.find(item => item.quality === "hd" || item.quality === null);
+
+  if (!hdVideo) {
+    return;
+  }
   // console.log(sdVideo);
-  const { file_type, link } = hdVideo;
+  const { file_type = "unknown", link = null } = hdVideo;
+
+  if (!link) {
+    return;
+  }
+
+
 
 
   $downloadLink.href = link;
