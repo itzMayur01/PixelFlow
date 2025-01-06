@@ -9,7 +9,7 @@ import { hoverOnPlay } from "./utils/hoverOnPlay.js";
 export const videoCard = (video) => {
 
   const root = window.location.origin;
-  // console.log(video);
+  console.log(video);
 
   const {
     height,
@@ -19,9 +19,24 @@ export const videoCard = (video) => {
     video_files
   } = video;
 
-  const sdVideo = video_files.find(item => item.quality === "sd");
-  // console.log(sdVideo);
-  const { file_type, link } = sdVideo;
+  const sdVideo = video_files?.find(item => item.quality === "sd" || (item.quality === null && item.width < 1000));
+
+  console.log(sdVideo);
+  // const { file_type, link } = sdVideo;
+
+  if (!sdVideo) {
+    return; // Exit the function if no valid video is found
+  }
+
+  // Check if the link property exists
+  const { file_type = "unknown", link = null } = sdVideo;
+
+
+  if (!link) {
+    return; // Skip processing this video
+  }
+
+
 
   const favoriteObj = JSON.parse(window.localStorage.getItem('favorite'));
 

@@ -1,6 +1,6 @@
 
 // import { urlEncode } from "./utils/urlEncode.js"
-// const API_KEY = **************
+// const API_KEY = "in api key file -> desktop"
 
 // const headers = new Headers();
 // headers.append("Authorization", API_KEY);
@@ -31,7 +31,7 @@
 //     /**
 //      * Search photos
 //      * @param {*} parameters url object
-//      * @param {*} callback 
+//      * @param {*} callback
 //      */
 //     search(parameters, callback) {
 //       requestUrl = `${root.default}search?${urlEncode(parameters)}`;
@@ -39,9 +39,9 @@
 //     },
 
 //     /**curated photos
-//      * 
+//      *
 //      * @param {*} parameters url object
-//      * @param {*} callback 
+//      * @param {*} callback
 //      */
 
 //     curated(parameters, callback) {
@@ -50,8 +50,8 @@
 
 //     /**
 //      * Get single photo detail
-//      * @param {*} id photo id 
-//      * @param {*} callback 
+//      * @param {*} id photo id
+//      * @param {*} callback
 //      */
 
 //     detail(id, callback) {
@@ -64,7 +64,7 @@
 //     /**
 //      * Search videos
 //      * @param {*} parameters url object
-//      * @param {*} callback 
+//      * @param {*} callback
 //      */
 //     search(parameters, callback) {
 //       requestUrl = `${root.videos}search?${urlEncode(parameters)}`;
@@ -72,9 +72,9 @@
 //     },
 
 //     /**Popular photos
-//      * 
+//      *
 //      * @param {*} parameters url object
-//      * @param {*} callback 
+//      * @param {*} callback
 //      */
 
 //     popular(parameters, callback) {
@@ -83,8 +83,8 @@
 
 //     /**
 //      * Get single Video detail
-//      * @param {*} id video id 
-//      * @param {*} callback 
+//      * @param {*} id video id
+//      * @param {*} callback
 //      */
 
 //     detail(id, callback) {
@@ -94,10 +94,10 @@
 
 //   collections: {
 
-//     /** get featured collections 
-//      * 
+//     /** get featured collections
+//      *
 //      * @param {*} parameters url object
-//      * @param {*} callback 
+//      * @param {*} callback
 //      */
 
 //     featured(parameters, callback) {
@@ -107,9 +107,9 @@
 
 //     /**
 //      * Get a collection medias
-//      * @param {*} id photo id 
+//      * @param {*} id photo id
 //      * @param {*} parameters url object
-//      * @param {*} callback 
+//      * @param {*} callback
 //      */
 
 //     detail(id, parameters, callback) {
@@ -119,6 +119,14 @@
 //   },
 
 // }
+
+
+
+
+
+
+
+
 
 import { urlEncode } from "./utils/urlEncode.js";
 
