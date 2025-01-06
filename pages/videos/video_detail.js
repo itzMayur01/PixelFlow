@@ -121,7 +121,7 @@ client.videos.detail(videoId, data => {
     } = item;
 
     // Handle cases where quality is null or undefined
-    const qualityLabel = quality ? quality.toUpperCase() : "UNKNOWN";
+    const qualityLabel = quality ? quality.toUpperCase() : "NA";
 
 
     $downloadMenu.innerHTML +=

@@ -105,7 +105,7 @@ client.photos.detail(photoId, data => {
 
 
     $downloadMenu.innerHTML +=
-      ` <a href=${value} class="menu-item" download data-ripple  data-menu-item>
+      ` <a href=${value} class="menu-item" download  data-ripple  data-menu-item>
           <span class="label-large text">${key}</span>
 
           <div class="state-layer"></div>
