@@ -15,7 +15,7 @@ if (sessionStorage.getItem('theme')) {
 
 // Function to toggle between light and dark themes
 const changeTheme = function () {
-  console.log('clickd'); // Log a message when the function is triggered
+  // console.log('clickd'); // Log a message when the function is triggered
 
   // Retrieve the current theme from sessionStorage
   isDark = sessionStorage.getItem('theme');

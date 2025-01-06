@@ -36,7 +36,7 @@ window.searchType = $activeSegmentBtn.dataset.segmentValue;
 
 segment($searchSegment, (segmentValue) => {
   window.searchType = segmentValue;
-  console.log(searchType);
+  // console.log(searchType);
 });
 
 /**
@@ -47,7 +47,7 @@ const $searchBtn = document.querySelector("[data-search-btn]");
 
 $searchBtn.addEventListener("click", () => {
   const searchValue = $searchField.value.trim();
-  console.log(`Searching for: ${searchValue}`);
+  // console.log(`Searching for: ${searchValue}`);
   if (searchValue) {
     updateSearchHistory(searchValue);
     window.filterObj.query = searchValue;

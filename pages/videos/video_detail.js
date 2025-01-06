@@ -84,7 +84,7 @@ const $downloadLink = document.querySelector("[data-download-link]");
 const $downloadMenu = document.querySelector("[data-download-menu]");
 
 client.videos.detail(videoId, data => {
-  console.log(data);
+  // console.log(data);
 
   const {
     height,

@@ -21,7 +21,7 @@ export const videoCard = (video) => {
 
   const sdVideo = video_files?.find(item => item.quality === "sd" || (item.quality === null && item.width < 1000));
 
-  console.log(sdVideo);
+  // console.log(sdVideo);
   // const { file_type, link } = sdVideo;
 
   if (!sdVideo) {

@@ -85,7 +85,7 @@ const $downloadLink = document.querySelector("[data-download-link]");
 const $downloadMenu = document.querySelector("[data-download-menu]");
 
 client.photos.detail(photoId, data => {
-  console.log(data);
+  // console.log(data);
 
   const {
     avg_color,
@@ -101,7 +101,7 @@ client.photos.detail(photoId, data => {
   Object.entries(src).forEach(item => {
     const [key, value] = item;
 
-    console.log(key, value);
+    // console.log(key, value);
 
 
     $downloadMenu.innerHTML +=
